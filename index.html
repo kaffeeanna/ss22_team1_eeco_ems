@@ -105,55 +105,76 @@
         <div class="col-md-6 col-sm-6">
           <div class="h-100 p-5 rounded-3">
             <br><br><br><br><br><br><br>
-            <img src="https://via.placeholder.com/490x360">
+            <img src="assets/prototyp.png" height="300">
           </div>
         </div>
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3">
             <br><br><br><br><br>
             <h2>Unser Prototyp</h2>
-            <p>Bavaria ipsum dolor sit amet schüds nei moand, greaßt eich nachad! Samma a owe, vasteh hob gelbe Rüam spernzaln zünftig am acht’n Tag schuf Gott des Bia des is schee Meidromml. Vergeltsgott oans, zwoa, gsuffa Marei des muas ma hoid kenna d’ Steckerleis. Mei Klampfn luja Engelgwand spernzaln Breihaus ebba wea ko, dea ko is des liab. Ma Lewakaas Resi ma. Nix Greichats do zua wui weida fei Obazda oamoi iabaroi!
-                <br><br>
-              Bavaria ipsum dolor sit amet schüds nei moand, greaßt eich nachad! Samma a owe, vasteh hob gelbe Rüam spernzaln zünftig am acht’n Tag schuf Gott des Bia des is schee Meidromml. Vergeltsgott oans, zwoa, gsuffa Marei des muas ma hoid kenna d’ Steckerleis. Mei Klampfn luja Engelgwand spernzaln Breihaus ebba wea ko, dea ko is des liab. Ma Lewakaas Resi ma. Nix Greichats do zua wui weida fei Obazda oamoi iabaroi!</p>
+            <p>Für den Prototyp wurde Schritt für Schritt vorgegangen. Nach einigen Coachings und Abschätzen wurde klar, dass der Baum und die Kugel mithilfe von Unity dargestellt wird. So kann sichergestellt werden, dass es visuell ansprechend ist und zeitlich umgesetzt werden kann. Der Proof-Of-Concept ist demnach zu zeigen,
+              dass grobes oder achtsames Verhalten von den symbolischen Wurzeln als Werte gemessen und durch sofortiges Feedback übersetzt werden kann. Der Input des menschlichen Verhaltens wird durch einen anfassbare kapazitiven Alufolien-Sensor gemessen. Konkret liest der Arduino den Input vom Anfassen des Sensors ein und
+              sendet diesen an den Globus in der Unity Applikation. Je nach Input verändert sich langsam die Farbe des Globus und eine LED-Leiste stellt durch sofortiges farbiges Feedback die Auswirkungen des Verhaltens dar. Ein Impuls wandert also durch den Sensor über die LED-Wurzeln in den Unity-Globus</p>
           </div>
         </div>
       </div>
       <br><br><br><br>
     </section>
-    <section id="unity">
-      <div class="row align-items-md-stretch">
-        <div class="col-md-12">
-          <div class="h-100 p-5 rounded-3">
-            <h2>Unity-Umgebung</h2>
-            <p>Unsere Unity-Umgebung zum "Anfassen"!</p>
-          </div>
-        </div>
-      </div>
-      <div class="row align-items-md-stretch unity">
-        <div class="col-md-12 col-sm-6">
-          <div class="h-100 rounded-3">
-           <img src="https://via.placeholder.com/1100x600">
-          </div>
-        </div>
-      </div>
-      <br><br><br><br><br><br>
-    </section>
     <section id="installation">
       <div class="row align-items-md-stretch">
-        <div class="col-md-6 col-sm-6">
-          <div class="h-100 p-5 rounded-3">
-            <br><br><img src="assets/baum-kugel-klein.png">
-          </div>
+        <div class="col-md-6">
+          <br><br><br><br>
+          <div class="d-none d-md-block h-full absolute">
+            <model-viewer camera-controls alt="eeco" src="assets/ring_v2.gltf" class="">
+            </model-viewer>
+            </div>
         </div>
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3">
             <br><br>
             <h2>Unsere Installation</h2>
-            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+            <p>Im Gegensatz zur Generation X und älteren Generationen hat der Klimawandel auf die Generation Alpha und kommenden Generationen in Zukunft Einfluss.
+              Auch wenn der Klimawandel bereits durch Flutkatastrophen und Dürre Wellen spürbar ist, wird es in Zukunft vermehrt zu solchen Katastrophen kommen,
+              wenn wir uns nicht um unsere Umwelt und Natur kümmern. Der Natur ist das Überleben des Menschen nicht wichtig. Doch benötigt der Mensch die Natur,
+              um überleben zu können.<br>
+              eeco ist eine spielerisch, experimentelle Installation für Grundschulkinder im Alter von 6 bis 11 Jahren, die den Kindern das Thema Klimawandel näher
+              bringen und diese zur gemeinsamen Interaktion miteinander anregen soll. Die Installation simuliert mithilfe von Klimaprognosen von Klimaforschern die
+              durchschnittliche Jahrestemperatur von 2020 bis 2100. Je nachdem, ob die Kinder grob oder achtsam mit der Installation umgehen, erhöht oder verringert
+              sich der Temperaturanstieg.
+              </p>
           </div>
         </div>
       </div>
       <br><br><br>
+    </section>
+    <section id="unity">
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 rounded-3">
+            <h2>Das Prinzip</h2>
+            <p>Wenn kein Kind in die Simulation eingreift, läuft die Simulation mit dem
+              aktuell zu erwartender Anstieg von ca. 0,03 °C pro Jahr ab. Dieser Anstieg wird nicht nur durch die Jahreszahl plus entsprechende
+              Temperaturschätzung, sondern auch visuell über eine Farbskala, welche immer röter wird, dargestellt. Jedoch haben die Kinder auch die Möglichkeit in
+              die Simulation einzugreifen, indem sie mit unserer Repräsentation der Natur achtsam oder grob umgehen. Ein achtsamer Umgang kann den Temperaturanstieg
+              vermindern, während ein grober Umgang den Temperaturanstieg antreibt. Das Eingreifen und die individuelle Auswirkung auf die Temperatur wird jedem einzelnen
+              Kind durch eine visuelle Darstellung vermittelt. Das bedeutet, dass jeder Einfluss auf das Klima hat. Jedoch ist das Ziel der Installation, dass die Kinder
+              miteinander in Interaktion treten und gemeinsam versuchen den Klimawandel aufzuhalten.
+              </p>
+            <video src=""></video>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 rounded-3">
+            <video src=""></video>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 rounded-3">
+            <video src=""></video>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
     </section>
     <section id="team">
       <div class="row align-items-md-stretch">
@@ -164,10 +185,10 @@
           </div>
         </div>
       </div>
-      <div class="row align-items-md-stretch unity">
-        <div class="col-md-12 col-sm-6">
+      <div class="row align-items-md-stretch">
+        <div class="col-md-12 col-sm-12">
           <div class="h-100 rounded-3">
-           <img src="https://via.placeholder.com/1100x600">
+           <img src="assets/IMG_0677.jpg" width="1100">
           </div>
         </div>
       </div>
@@ -185,4 +206,5 @@
 
     
   </body>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </html>
