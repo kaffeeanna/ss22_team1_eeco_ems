@@ -39,18 +39,35 @@
   <body class="d-flex h-100">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#hero">Start</a>
-        <a class="nav-link" href="#intro">Konzept</a>
-        <a class="nav-link" href="#prototyp">Prototyp</a>
-        <a class="nav-link" href="#unity">Unity</a>
-        <a class="nav-link" href="#installation">Installation</a>
-        <a class="nav-link" href="#team">Team</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#hero">eeco</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link active" aria-current="page" href="#hero">Start</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">Konzept</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#prototyp">Prototyp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#unity">Unity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#installation">Installation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
   <main class="px-3">
     <section id="hero">
@@ -71,7 +88,7 @@
       <div class="row align-items-md-stretch text-center">
         <div class="col-md-12">
           <div class="h-100 p-5 rounded-3">
-            <img src="assets/CTA.svg"><br><br><br>
+            <a href="#intro"><img src="assets/CTA.svg"></a><br><br><br>
           </div>
         </div>
       </div>
@@ -82,7 +99,7 @@
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3">
             <br><br>
-            <h2>Hier steht eine tolle Headline</h2>
+            <h2>Unsere abstrakte Umgebung</h2>
             <p>Wir haben durch unsere Recherche festgestellt, dass die Beziehung von Mensch zu Umgebung durch das digitale Zeitalter immer weiter in den Hintergrund rückt und es nur noch um Abstraktes erleben geht.
               <br><br>
               Konkret beschäftigen wir uns mit der Frage, ob die gezielte Gewichtung von Form und Information das Verhalten von Mensch zur Umgebung beeinflussen kann. Die Information, mit welcher wir uns beschäftigen, sind die Daten der Natur, beziehungsweise dem Einfluss der durch den Klimawandel steigenden Temperatur auf das Baumwachstum und das Überleben des Waldes.
@@ -98,19 +115,18 @@
           </div>
         </div>
       </div>
-      <br><br>
     </section>
     <section id="prototyp">
       <div class="row align-items-md-stretch">
         <div class="col-md-6 col-sm-6">
           <div class="h-100 p-5 rounded-3">
-            <br><br><br><br><br><br><br>
+            <br><br><br><br><br>
             <img src="assets/prototyp.png" height="300">
           </div>
         </div>
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3">
-            <br><br><br><br><br>
+            <br><br><br>
             <h2>Unser Prototyp</h2>
             <p>Für den Prototyp wurde Schritt für Schritt vorgegangen. Nach einigen Coachings und Abschätzen wurde klar, dass der Baum und die Kugel mithilfe von Unity dargestellt wird. So kann sichergestellt werden, dass es visuell ansprechend ist und zeitlich umgesetzt werden kann. Der Proof-Of-Concept ist demnach zu zeigen,
               dass grobes oder achtsames Verhalten von den symbolischen Wurzeln als Werte gemessen und durch sofortiges Feedback übersetzt werden kann. Der Input des menschlichen Verhaltens wird durch einen anfassbare kapazitiven Alufolien-Sensor gemessen. Konkret liest der Arduino den Input vom Anfassen des Sensors ein und
@@ -118,17 +134,9 @@
           </div>
         </div>
       </div>
-      <br><br><br><br>
     </section>
     <section id="installation">
       <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <br><br><br><br>
-          <div class="d-none d-md-block h-full absolute">
-            <model-viewer camera-controls alt="eeco" src="assets/ring_v2.gltf" class="">
-            </model-viewer>
-            </div>
-        </div>
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3">
             <br><br>
@@ -144,6 +152,14 @@
               </p>
           </div>
         </div>
+        <div class="col-md-5">
+         <br><br><br><br><br>
+          <!----- <div class="d-none d-md-block h-full absolute">
+            <model-viewer camera-controls alt="eeco" src="assets/ring_v2.gltf" class="">
+            </model-viewer>
+            </div>----->
+            <img src="assets/baum.svg">
+        </div>
       </div>
       <br><br><br>
     </section>
@@ -152,9 +168,7 @@
         <div class="col-md-6">
           <div class="h-100 p-5 rounded-3">
             <h2>Das Prinzip</h2>
-            <p>Wenn kein Kind in die Simulation eingreift, läuft die Simulation mit dem
-              aktuell zu erwartender Anstieg von ca. 0,03 °C pro Jahr ab. Dieser Anstieg wird nicht nur durch die Jahreszahl plus entsprechende
-              Temperaturschätzung, sondern auch visuell über eine Farbskala, welche immer röter wird, dargestellt. Jedoch haben die Kinder auch die Möglichkeit in
+            <p>Die Kinder haben die Möglichkeit in
               die Simulation einzugreifen, indem sie mit unserer Repräsentation der Natur achtsam oder grob umgehen. Ein achtsamer Umgang kann den Temperaturanstieg
               vermindern, während ein grober Umgang den Temperaturanstieg antreibt. Das Eingreifen und die individuelle Auswirkung auf die Temperatur wird jedem einzelnen
               Kind durch eine visuelle Darstellung vermittelt. Das bedeutet, dass jeder Einfluss auf das Klima hat. Jedoch ist das Ziel der Installation, dass die Kinder
@@ -163,43 +177,42 @@
           </div>
         </div>
       </div>
-      <div class="row align-items-md-stretch">
+      <div class="row align-items-md-stretch" style="padding-left: 3rem;">
         <div class="col-md-6">
-          <div class="h-100 p-5">
-            <video width="300" height="600" controls>
-              <source src="assets/test.mp4" type="video/mp4">
+          <div class="h-100">
+            <video width="540" controls>
+              <source src="assets/achtsam_beruehren.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="h-100 p-5">
-            <video width="300" height="600" controls>
-              <source src="assets/test.mp4" type="video/mp4">
+          <div class="h-100">
+            <video width="540" controls>
+              <source src="assets/grob_beruehren.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
       </div>
-      <br><br><br><br><br><br>
+      <br><br><br><br><br>
     </section>
     <section id="team">
       <div class="row align-items-md-stretch">
         <div class="col-md-12">
           <div class="h-100 p-5 rounded-3">
-            <br><br><br>
             <h2>Das Team</h2>
           </div>
         </div>
       </div>
       <div class="row align-items-md-stretch">
         <div class="col-md-12 col-sm-12">
-          <div class="h-100 p-5 rounded-3">
-           <img src="assets/IMG_0677.jpg" width="1100">
+          <div class="h-100 rounded-3" style="padding-left: 3rem;">
+           <img src="assets/IMG_0677.jpg">
           </div>
         </div>
       </div>
-      <br><br><br><br><br><br>
+      <br><br><br><br>
     </section>
   </main>
 
