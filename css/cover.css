@@ -25,6 +25,10 @@
   color:#4C7354;
 }
 
+body {
+  max-width: 1200px !important;
+}
+
 
 /*
  * Header
