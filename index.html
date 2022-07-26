@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-
+<!---- Quelle Template: https://startbootstrap.com/theme/freelancer -->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -137,21 +137,23 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="h-100">
-                        <video controls="true" playsInline muted poster="assets/video-thumbnail.png">
+                        <video id="video-tag" controls="true" playsInline muted poster="assets/video-thumbnail.png">
                             <source src="assets/achtsam_beruehren.mp4" type="video/mp4">
                             <source src="assets/achtsam_beruehren.mov" type="video/mov">
                             Your browser does not support the video tag.
                         </video>
+                        <img id="img-tag" src="assets/achtsam_beruehren.mp4">
                         <p>Achtsam berühren</p><br><br>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="h-100">
-                        <video controls="true" playsinline muted poster="assets/video-thumbnail.png">
+                        <video id="video2-tag" controls="true" playsinline muted poster="assets/video-thumbnail.png">
                             <source src="assets/grob_beruehren.mp4" type="video/mp4">
                             <source src="assets/grob_beruehren.mov" type="video/mov">
                             Your browser does not support the video tag.
                         </video>
+                        <img id="img2-tag" src="assets/grob_beruehren.mp4">
                         <p>Grob berühren</p><br><br>
                     </div>
                 </div>
@@ -213,6 +215,23 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script type="text/javascript">
+        function BrowserDetection() {
+    
+        //Check if browser is Safari, if it is, hide the <video> tag, otherwise hide the <img> tag
+        if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+            document.getElementById('video-tag').style.display= "none";
+            document.getElementById('video2-tag').style.display= "none";
+        } else {
+            document.getElementById('img-tag').style.display= "none";
+            document.getElementById('img2-tag').style.display= "none";
+        }   
+    }            
+    
+        //And run the script. Note that the script tag needs to be run after HTML so where you place it is important. 
+        BrowserDetection();
+    </script>
+    <!--- Quelle: https://stackoverflow.com/questions/20347352/html5-video-tag-not-working-in-safari-iphone-and-ipad -->
 </body>
 
 </html>
